@@ -2,6 +2,9 @@ import React from 'react';
 
 function Modal({currentPhoto}) {
     const {name, category, description, index} = currentPhoto;
+    const Modal = ({ onClose, currentPhoto }) => {
+        <button onClick={onClose} type="button">Close this modal</button>
+    }
 
     return(
         <div className="modalBackdrop">
